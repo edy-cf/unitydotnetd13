@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MoveLeft : MonoBehaviour
 {
-  private float speed = 30.0f;
+  private float _speed = 30.0f;
   
   // Start is called before the first frame update
   void Start()
@@ -15,6 +15,6 @@ public class MoveLeft : MonoBehaviour
   // Update is called once per frame
   void Update()
   {
-    transform.Translate(Vector3.left * Time.deltaTime * speed);
+    transform.Translate(Vector3.left * Time.deltaTime * _speed);
   }
 }
